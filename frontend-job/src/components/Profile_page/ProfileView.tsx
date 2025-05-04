@@ -106,10 +106,10 @@ const ProfileView = ({ userData }: ProfileViewProps) => {
                         Job Preferences
                     </h3>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <div className="space-y-1">
+                        {/* <div className="space-y-1">
                             <p className="text-sm text-gray-500">Preferred Job Type</p>
                             <p className="font-medium capitalize">{userData.preferred_job_type}</p>
-                        </div>
+                        </div> */}
                         <div className="space-y-1">
                             <p className="text-sm text-gray-500">Location</p>
                             <p className="font-medium">

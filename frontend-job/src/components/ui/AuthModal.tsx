@@ -202,8 +202,9 @@ const AuthModal: React.FC<AuthModalProps> = ({ type, open, onClose }) => {
                 options={[
                   { label: "Plumber", value: "Plumber" },
                   { label: "Electrician", value: "Electrician" },
-                  { label: "Software Developer", value: "Software Developer" },
+                //   { label: "Software Developer", value: "Software Developer" },
                   { label: "Mechanic", value: "Mechanic" },
+                  { label: "Helper", value: "Helper" },
                 ]}
                 value={formData.skills.map((skill) => ({
                   label: skill,
@@ -228,12 +229,12 @@ const AuthModal: React.FC<AuthModalProps> = ({ type, open, onClose }) => {
                 value={formData.experience}
                 onChange={handleInputChange}
               />
-              <Input
+              {/* <Input
                 name="preferred_job_type"
                 placeholder="Preferred Job Type"
                 value={formData.preferred_job_type}
                 onChange={handleInputChange}
-              />
+              /> */}
             </>
           )}
 

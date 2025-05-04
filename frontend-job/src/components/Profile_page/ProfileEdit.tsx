@@ -67,12 +67,12 @@ const ProfileEdit = ({ userData, onSave }: { userData: any; onSave: () => void }
       />
       <Input name="education" value={form.education} onChange={handleChange} placeholder="Education" />
       <Input name="experience" value={form.experience} onChange={handleChange} placeholder="Experience" />
-      <Input
+      {/* <Input
         name="preferred_job_type"
         value={form.preferred_job_type}
         onChange={handleChange}
         placeholder="Preferred Job Type"
-      />
+      /> */}
 
       <Button onClick={handleSave} disabled={saving}>
         {saving ? "Saving..." : "Save Changes"}

@@ -97,7 +97,7 @@ const HeroHeader = () => {
 
                             {userEmail ? (
                                 // If logged in, show profile icon and logout button
-                                <div className="relative">
+                                <div className="relative flex gap-3">
                                     <Button
                                         onClick={handleProfileClick}
                                         variant="outline"
@@ -107,21 +107,22 @@ const HeroHeader = () => {
                                         <User className="size-6" />
                                         <span>Profile</span>
                                     </Button>
-                                    {showProfileMenu && (
+                                    {/* {showProfileMenu && (
                                         <div className="absolute right-0 mt-2 w-48 bg-white shadow-lg rounded-lg">
                                             <ul>
                                                 <li>
-                                                    <Button
+                                                   
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    )} */}
+                                     <Button
                                                         onClick={handleLogout}
                                                         className="w-full text-left px-4 py-2 text-sm"
                                                     >
                                                         <LogOut className="mr-2" />
                                                         Logout
                                                     </Button>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    )}
                                 </div>
                             ) : (
                                 <div className="flex w-full flex-col space-y-3 sm:flex-row sm:gap-3 sm:space-y-0 md:w-fit">
