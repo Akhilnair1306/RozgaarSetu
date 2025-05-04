@@ -1,0 +1,34 @@
+# Node.js dependencies
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# dotenv environment variables
+.env
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build output
+dist/
+build/
+
+# Optional cache
+.cache/
+.next/
+out/
+.vite/
+
+# IDEs and editors
+.vscode/
+.idea/
+
+# Testing
+coverage/
+
+# Local environment
+*.local
